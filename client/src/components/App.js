@@ -4,9 +4,10 @@ import { Routes, Route } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 
 import NotFound from "./pages/NotFound.js";
-import Skeleton from "./pages/Skeleton.js";
+import Demo from "./pages/Demo.js";
 
 import "../utilities.css";
+import "../index.css";
 
 import { socket } from "../client-socket.js";
 
@@ -47,12 +48,7 @@ const App = () => {
       <Route
         path="/"
         element={
-          <Skeleton
-            path="/"
-            handleLogin={handleLogin}
-            handleLogout={handleLogout}
-            userId={userId}
-          />
+          <Demo/>
         }
       />
       <Route path="*" element={<NotFound />} />

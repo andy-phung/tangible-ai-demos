@@ -46,6 +46,9 @@ module.exports = {
           {
             loader: "css-loader",
           },
+          {
+            loader: "postcss-loader",
+          },
         ],
       },
       {
@@ -64,6 +67,7 @@ module.exports = {
   plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
     historyApiFallback: true,
+    allowedHosts: "all",
     static: "./client/dist",
     hot: true,
     proxy: {

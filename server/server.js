@@ -36,22 +36,22 @@ const socketManager = require("./server-socket");
 
 // Server configuration below
 // TODO change connection URL after setting up your team database
-const mongoConnectionURL = process.env.MONGO_SRV;
+//const mongoConnectionURL = process.env.MONGO_SRV;
 // TODO change database name to the name you chose
-const databaseName = "FILL_ME_IN";
+//const databaseName = "FILL_ME_IN";
 
 // mongoose 7 warning
-mongoose.set("strictQuery", false);
+//mongoose.set("strictQuery", false);
 
 // connect to mongodb
-mongoose
-  .connect(mongoConnectionURL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    dbName: databaseName,
-  })
-  .then(() => console.log("Connected to MongoDB"))
-  .catch((err) => console.log(`Error connecting to MongoDB: ${err}`));
+// mongoose
+//   .connect(mongoConnectionURL, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     dbName: databaseName,
+//   })
+//   .then(() => console.log("Connected to MongoDB"))
+//   .catch((err) => console.log(`Error connecting to MongoDB: ${err}`));
 
 // create a new express server
 const app = express();
