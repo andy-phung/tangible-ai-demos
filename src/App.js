@@ -13,7 +13,7 @@ function sleep(s) {
   return new Promise(resolve => setTimeout(resolve, s*1000));
 }
 
-const genAI = new GoogleGenerativeAI("AIzaSyBRuQoJFq33HnFq4A8BNAg6Mci3ppvYTC0");
+const genAI = new GoogleGenerativeAI("AIzaSyD0b6d8ihQYPZEzJth_8SgDJjFb3j0wJzs");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 const tts = new Speech() 
